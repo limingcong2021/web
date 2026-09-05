@@ -144,6 +144,16 @@ const Menu = React.memo(({ isOpen, onClose, showR18, setShowR18, fetchImages, im
               <li><Link href="/" className="text-white hover:text-gray-300">首页</Link></li>
               <li><Link href="/game" className="text-white hover:text-gray-300">3D游戏</Link></li>
               <li><button onClick={fetchImages} className="text-white hover:text-gray-300">加载图片库</button></li>
+              <li>
+                <a
+                  href="https://dsd.201106.xyz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300"
+                >
+                  DeepSeek 充值 ↗
+                </a>
+              </li>
             </ul>
           </nav>
 
@@ -292,6 +302,14 @@ export function EnhancedStarryHomeComponent() {
               <a href="#" className="text-blue-400 hover:text-blue-300">LinkedIn</a>
               <a href="#" className="text-blue-400 hover:text-blue-300">Twitter</a>
             </div>
+            <a
+              href="https://dsd.201106.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-6 py-2.5 rounded-full border border-blue-500/40 bg-blue-500/10 text-blue-300 hover:bg-blue-500/20 hover:text-blue-200 transition-colors mb-8"
+            >
+              ⚡ 前往 DeepSeek 充值
+            </a>
             {hitokoto && (
               <div className="mt-8 text-sm text-gray-400">
                 <p>{hitokoto.hitokoto}</p>
